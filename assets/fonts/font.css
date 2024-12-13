@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "yekan";
+    src: url("Yekan/ttf/iranyekanwebmediumfanum.ttf");
+}
+@font-face {
+    font-family: "yekan-bold";
+    src: url("Yekan/ttf/iranyekanwebextraboldfanum.ttf");
+}
+@font-face {
+    font-family: "iran";
+    src: url("irn-sans/ttf/IRANSansWeb\(FaNum\)_Medium.ttf");
+}
+
+@font-face {
+    font-family: "iran-bold";
+    src: url("irn-sans/ttf/IRANSansWeb\(FaNum\)_Bold.ttf");
+}
+@font-face {
+    font-family: "iran-light";
+    src: url("irn-sans/ttf/IRANSansWeb\(FaNum\)_Light.ttf");
+}
+:root {
+    --blue-main: #303f9f;
+    --primary-color: #515151;
+}
+body {
+    font-family: "iran";
+    color: var(--primary-color);
+}
+.iran-bold {
+    font-family: "iran-bold";
+}
+.yekan {
+    font-family: "yekan";
+}
+.date,
+.slider-section *:not(h4, i),
+.container-detail,
+.month-student-info p,
+.news-container,
+.footer-logo-container h4,
+.school-info div p,
+footer p:last-child {
+    font-family: "iran-light";
+}
+i {
+    font-style: normal;
+}
