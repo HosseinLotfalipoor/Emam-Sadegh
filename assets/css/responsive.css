@@ -96,6 +96,7 @@ li , p , a , span {
 @media screen and (min-width:992px){
     .col-lg-1{width: 8.33%;}
     .col-lg-2{width: 16.66%;}
+    .col-lg-25{width: 24%;}
     .col-lg-3{width: 25%;}
     .col-lg-4{width: 33.33%;}
     .col-lg-5{width: 41.66%;}
