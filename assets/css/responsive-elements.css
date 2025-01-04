@@ -1,0 +1,304 @@
+:root {
+    --mobile-35vw: 3.5vw;
+    --line-height20: 20px;
+}
+
+/* responsive nav */
+.moblie-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+.ctrl-btn,
+.side-btn button {
+    padding: 20px;
+    background-color: transparent;
+}
+.ctrl-btn {
+    font-size: 5vw;
+}
+.layer-body::after {
+    content: "";
+    width: 110%;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 4;
+}
+.sidebar {
+    position: absolute;
+    right: -100%;
+    display: flex;
+    background-color: #fff;
+    z-index: 15;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    transition: right 0.5s;
+    flex-direction: column;
+    padding: 10px;
+}
+.sidebar .logo-header {
+    max-width: 50px;
+}
+.side-btn {
+    display: flex;
+    justify-content: space-between;
+}
+.side-btn button i {
+    font-size: 5vw;
+}
+.show {
+    right: 0 !important;
+}
+
+.hidden-scroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.side-contact {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-container-header h2 {
+        font-size: 3vw;
+    }
+    .logo-container-header {
+        width: 70%;
+    }
+    .moblie-nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .active::after {
+        display: none;
+    }
+    .sidebar * {
+        font-size: var(--mobile-35vw);
+    }
+    .contact-header,
+    .register-for-school {
+        width: 100%;
+        text-align: right;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .register-for-school button {
+        padding: 0;
+    }
+    .contact-header span{
+        font-size: 2.5vw;
+    }
+    .register-for-school button::before {
+        font-size: var(--mobile-35vw);
+    }
+    .section-one-aria {
+        border-radius: 0px;
+        margin: 0 !important;
+    }
+    .section-one-aria::after {
+        border-radius: 0;
+        background-image: linear-gradient(
+            to left,
+            #1e2b79,
+            #1e2b79 50%,
+            transparent
+        );
+    }
+    section[class*="aria"] {
+        margin: 30px 0;
+    }
+    .section-one-aria article {
+        width: 75%;
+    }
+    .section-one-article h1 {
+        font-size: 4vw;
+        margin-bottom: 10px;
+    }
+    .section-one-article p {
+        line-height: var(--line-height20);
+        font-size: 3vw;
+    }
+    .section-three-aria article button,
+    .button-header button {
+        font-size: 3vw;
+        padding: 10px 20px;
+    }
+    .section-two-aria {
+        flex-direction: column;
+    }
+    .blue-h3 {
+        font-size: var(--mobile-35vw);
+    }
+    div[class*="title"] h1 {
+        font-size: 4vw;
+    }
+    .school-properties-container {
+        margin: 15px 0;
+    }
+    .school-property-disc {
+        line-height: var(--line-height20);
+    }
+    .school-property-disc h4 {
+        font-size: 3vw;
+    }
+    .icon-container {
+        max-width: 13%;
+    }
+    .school-property-disc p {
+        font-size: 2.5vw;
+    }
+    .section-three-aria {
+        padding: 40px 20px;
+    }
+    .section-three-aria .container {
+        flex-direction: column;
+    }
+    .img-container,
+    .section-three-aria article {
+        max-width: 100% !important;
+    }
+    .section-three-aria article p {
+        line-height: var(--line-height20);
+        font-size: 3vw;
+        margin: 10px 0 20px;
+    }
+    .section-four-aria article {
+        justify-content: space-evenly;
+        margin: 25px 0 30px;
+    }
+    .honors-card {
+        margin: 20px 0;
+        line-height: var(--line-height20);
+        padding: 10px 10px 20px 0;
+        border-radius: 24px;
+    }
+    .medal-icon {
+        max-width: 40%;
+        padding: 10px;
+    }
+    .honors-card h4 {
+        margin: 10px 0 0;
+        font-size: 2.5vw;
+    }
+    .honors-card p {
+        margin: 0;
+        font-size: 2vw;
+    }
+    .date {
+        font-size: 2vw;
+    }
+    .link-button span i {
+        font-size: 2vw;
+    }
+    .section-five-title {
+        margin: 60px 0 20px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+    .slider-section {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .slider-section:nth-child(2) {
+        display: none;
+    }
+    .slider-section p {
+        font-size: 2.5vw;
+    }
+    .slider-section h4 {
+        font-size: 3vw;
+    }
+    .slider-section span {
+        font-size: 2vw;
+    }
+    .date-link {
+        margin: 20px 0;
+    }
+    .date-link i,
+    .date-link a {
+        font-size: 2vw;
+    }
+    .section-six-aria {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .month-student,
+    .other-news {
+        border-radius: 24px;
+        padding: 20px;
+    }
+    .container-detail {
+        margin: 10px 0 20px;
+        font-size: 3vw;
+    }
+    .user-picture {
+        max-width: 50px;
+    }
+    .medal-container {
+        max-width: 35px;
+    }
+    .month-student-info h4 {
+        font-size: var(--mobile-35vw);
+    }
+    .month-student-info {
+        padding: 15px 5px;
+    }
+    .month-student-info p {
+        font-size: 2vw;
+    }
+    .news-container i,
+    .news-container p {
+        font-size: 2.5vw;
+    }
+    .news-container a{
+        justify-content: center;
+        gap: 5px;
+    }
+    .footer-logo-container h4 {
+        width: 100%;
+    }
+    .social-media {
+        max-width: 40px;
+    }
+    .fast-links {
+        margin: 10px;
+    }
+    .fast-links li {
+        width: 45%;
+        padding: 10px !important;
+        border: none !important;
+    }
+    .fast-links li a {
+        font-size: 3vw;
+    }
+    .school-info {
+        margin: 10px;
+        align-items: start;
+        flex-direction: column;
+    }
+    .school-info div p {
+        font-size: 3vw;
+        padding: 10px 0;
+        margin-right: 10px;
+    }
+    .school-info div i {
+        font-size: 3vw;
+    }
+
+    footer .copy-right {
+        font-size: 2.5vw;
+        padding: 10px 0;
+    }
+}

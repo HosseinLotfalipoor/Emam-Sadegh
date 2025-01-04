@@ -43,6 +43,8 @@ li , p , a , span {
     width: 100%;
     height: auto;
 }
+
+
 /* xs */
 
     .col-xs-1{width: 8.33%;}
