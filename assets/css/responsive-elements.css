@@ -30,14 +30,17 @@
     z-index: 4;
 }
 .sidebar {
-    position: absolute;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+
     right: -100%;
     display: flex;
     background-color: #fff;
     z-index: 15;
     width: 55%;
     height: 100vh;
-    top: 0;
     transition: right 0.5s;
     flex-direction: column;
     padding: 10px;
@@ -95,7 +98,7 @@
     .register-for-school button {
         padding: 0;
     }
-    .contact-header span{
+    .contact-header span {
         font-size: 2.5vw;
     }
     .register-for-school button::before {
@@ -262,7 +265,7 @@
     .news-container p {
         font-size: 2.5vw;
     }
-    .news-container a{
+    .news-container a {
         justify-content: center;
         gap: 5px;
     }
